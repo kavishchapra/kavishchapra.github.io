@@ -50,6 +50,9 @@
       .publication-copy p { color: var(--muted); font-size: 16px; line-height: 1.75; margin: 0 0 22px; }
       .publication-copy .publication-authors { color: var(--ink); font-size: 14px; }
       .publication-copy .publication-doi { margin: 22px 0 0; font-size: 11px; overflow-wrap: anywhere; }
+      .publication-card + .publication-card { border-top: 0; }
+      .publication-contributions { list-style: disc; padding-left: 20px; margin: 0; }
+      .publication-contributions li { color: var(--muted); font-size: 16px; line-height: 1.75; margin: 0 0 12px; }
       @media (max-width: 1050px) { .publications-heading, .publication-card { grid-template-columns: 1fr; gap: 28px; } }
       @media (max-width: 760px) { .publication-meta { flex-direction: row; align-items: center; flex-wrap: wrap; } .publication-card { padding: 28px 0 32px; } }
     </style>
@@ -132,8 +135,9 @@
             Health on two co-authored research papers. My work includes
             reproducing statistical analyses, testing assumptions and writing
             manuscript sections. Our first paper is now available as a
-            <a href="#publications">PsyArXiv preprint</a>, while the second is in
-            preparation. Previously, I completed a research internship with
+            <a href="#publications">PsyArXiv preprint</a>, while the second has
+            been submitted to PsyArXiv and is awaiting moderation. Previously,
+            I completed a research internship with
             Dr Kelly Zhang in Imperial&#x27;s Department of Mathematics, reviewing
             reinforcement-learning methods for digital health. I am interested
             in quantitative trading, financial markets and applied AI, and I
@@ -401,7 +405,8 @@
                 <li>
                   Work with Dr Elizabeth Lampe on two co-authored research
                   papers. The first is publicly available as a PsyArXiv
-                  preprint; the second manuscript is in preparation.
+                  preprint; the second has been submitted to PsyArXiv and is
+                  awaiting moderation.
                 </li>
                 <li>
                   Reconstructed an analysis from 35 public files and matched
@@ -411,8 +416,10 @@
                 </li>
                 <li>
                   Wrote the first manuscript&#x27;s Methods and Results sections.
-                  For the second paper, completed statistical analyses and a
-                  manuscript draft with three tables and one figure.
+                  For the second paper, reproduced five survey-weighted onset
+                  models and ran 14 sensitivity and diagnostic model fits;
+                  drafted Methods and Results and documented data and
+                  weighting limitations.
                 </li>
               </ul>
             </div>
@@ -602,7 +609,7 @@
           <div>
             <h2 class="section-title" id="publications-title">Research papers.</h2>
             <p class="publications-intro">
-              A co-authored preprint from my work at Dartmouth College.
+              One public preprint and a second manuscript awaiting PsyArXiv moderation.
             </p>
           </div>
         </div>
@@ -632,6 +639,30 @@
               Read the preprint ↗
             </a>
             <p class="publication-doi">DOI: 10.31234/osf.io/ms925_v1</p>
+          </div>
+        </article>
+        <article class="publication-card" aria-labelledby="publication-paper-2">
+          <div class="publication-meta">
+            <span class="publication-status">Awaiting moderation</span>
+            <span>Submitted to PsyArXiv</span>
+          </div>
+          <div class="publication-copy">
+            <h3 id="publication-paper-2">Second research manuscript</h3>
+            <p class="publication-authors">Kavish Chapra · Co-author</p>
+            <p>
+              Manuscript completed and submitted to PsyArXiv; awaiting moderation.
+              A public preprint link is not yet available.
+            </p>
+            <ul class="publication-contributions">
+              <li>
+                Reproduced 5 survey-weighted onset models in 12,314 adults,
+                verifying 4 result tables and a survival figure.
+              </li>
+              <li>
+                Ran 14 sensitivity and diagnostic model fits; drafted Methods
+                and Results and documented data and weighting limitations.
+              </li>
+            </ul>
           </div>
         </article>
       </section>
